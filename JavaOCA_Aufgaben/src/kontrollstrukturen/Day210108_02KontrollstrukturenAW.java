@@ -1,6 +1,6 @@
 package kontrollstrukturen;
 
-public class Day210108_02KontrollstrukturenAW {
+public class aufgabenKontrollstrukturen {
 
 	public static void main(String[] args) {
 		
@@ -41,7 +41,7 @@ public class Day210108_02KontrollstrukturenAW {
 		}
 		
 		//Aufgabe 4: Bitte die englischen Kleinbuchstaben von a bis z in einer Zeile ausgeben: a b c ... z
-		System.out.println("\n\nAufgabe 4:");			
+		System.out.println("\n\nAufgabe 4: Meine Lösung, etwas zu umständlich");			
 		for (int i = 97; i < 123; i++) {
 			char j = (char) i;
 			System.out.print(j + " ");
@@ -54,16 +54,15 @@ public class Day210108_02KontrollstrukturenAW {
 		}
 		
 		//Aufgabe 4b
-		System.out.println("\n\nAufgabe 4b:");			
+		System.out.println("\n\nAufgabe 4c:");			
 		for (int i = 'a'; i <= 'z'; i++) {
 			System.out.print((char)i + " ");
 		}
 		
 		//Aufgabe 5: Bitte die englischen Grossbuchstaben rueckwaerts in einer Zeile ausgeben: Z Y X ... A 90-65
-		System.out.println("\n\nAufgabe 5:");			
-		for (int i = 90; i > 64; i--) {
-			char j = (char) i;
-			System.out.print(j + " ");
+		System.out.println("\n\nAufgabe 5: Lösung des Dozenten");			
+		for(char ch='Z'; ch>='A'; ch--) {
+			System.out.print(ch + " ");
 		}
 		
 		//Aufgabe 6: Bitte die Zahlen aus dem Bereich [1 ... 100] ausgeben, die durch 5 ohne Rest dividierbar sind
@@ -84,7 +83,7 @@ public class Day210108_02KontrollstrukturenAW {
 			//i=3, j=1, 2, 3
 			//i=2, j=1, 2
 			//i=1, j=1
-			for (int j=1; j<=3;j++) {
+			for (int j=1; j<=i;j++) {
 				System.out.print(j+ "_");
 			}
 		}

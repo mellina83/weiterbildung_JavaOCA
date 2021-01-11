@@ -1,6 +1,6 @@
 package kontrollstrukturen;
 
-public class Day210108_01Operatoren {
+public class kleineAufgabenOperatoren {
 
 	public static void main(String[] args) {
 		
