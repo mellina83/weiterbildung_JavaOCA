@@ -39,12 +39,7 @@ public class kleineAufgabenOperatoren {
 		int anzahlKisten = 2;
 		int gefuellteKisten = anzahlFlaschen / anzahlFlaschenProKiste;
 		
-		if (gefuellteKisten <= anzahlKisten) {
-		
-			for (int i=1; i<=gefuellteKisten ; i++) {
-				System.out.println( i + ". Kiste füllen" );
-			}
-		}
+		// OFFEN!!!!!
 
 		
 	} // Ende Main Methode
