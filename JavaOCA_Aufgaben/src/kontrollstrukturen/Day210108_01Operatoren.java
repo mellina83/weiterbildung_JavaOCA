@@ -1,4 +1,4 @@
-package imperative_Sprachkonzepte;
+package kontrollstrukturen;
 
 public class Day210108_01Operatoren {
 
