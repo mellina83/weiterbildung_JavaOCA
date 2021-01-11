@@ -18,6 +18,13 @@ public class Day210108_02KontrollstrukturenAW {
 			}
 			System.out.print(i+" ");
 		}
+		// Alternativ
+		System.out.println("\n\nAufgabe 2b:");		
+		for (int i = 0; i<10; i++) {
+			if (i != 1) {
+			System.out.print(i+" ");
+			}
+		}
 
 		//Aufgabe 3: Folgende Zahlenreihe mit der for-Schleife in einer Zeile ausgeben: -4 -2 0 2 4 ... 50
 		System.out.println("\n\nAufgabe 3:");		
@@ -25,11 +32,31 @@ public class Day210108_02KontrollstrukturenAW {
 			System.out.print(i+" ");
 		}
 		
+		//Aufgabe 3b ABERNICHTMEINE
+		System.out.println("\n\nAufgabe 3b:");		
+		for (int i = -4; i < 51; i ++) {
+			if (i%2==0) {
+				System.out.print(i+" ");
+			}
+		}
+		
 		//Aufgabe 4: Bitte die englischen Kleinbuchstaben von a bis z in einer Zeile ausgeben: a b c ... z
 		System.out.println("\n\nAufgabe 4:");			
 		for (int i = 97; i < 123; i++) {
 			char j = (char) i;
 			System.out.print(j + " ");
+		}
+		
+		//Aufgabe 4b
+		System.out.println("\n\nAufgabe 4b:");			
+		for (char ch = 'a' ; ch <= 'z'; ch++) {
+			System.out.print(ch + " ");
+		}
+		
+		//Aufgabe 4b
+		System.out.println("\n\nAufgabe 4b:");			
+		for (int i = 'a'; i <= 'z'; i++) {
+			System.out.print((char)i + " ");
 		}
 		
 		//Aufgabe 5: Bitte die englischen Grossbuchstaben rueckwaerts in einer Zeile ausgeben: Z Y X ... A 90-65
@@ -50,7 +77,17 @@ public class Day210108_02KontrollstrukturenAW {
 		}
 		
 		//Optional: Folgende Zahlenreihe bitte in einer Zeile ausgeben: 3 1 2 3 2 1 2 1 1
-		System.out.println("\n\nZusatzaufgabe:");		
+		System.out.println("\n\nZusatzaufgabe:");
+		for(int i=3; i>=1;i--) {
+			System.out.print(i + " ");
+			
+			//i=3, j=1, 2, 3
+			//i=2, j=1, 2
+			//i=1, j=1
+			for (int j=1; j<=3;j++) {
+				System.out.print(j+ "_");
+			}
+		}
 		
 	}
 

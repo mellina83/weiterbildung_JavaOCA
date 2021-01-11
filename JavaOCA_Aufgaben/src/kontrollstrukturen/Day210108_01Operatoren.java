@@ -37,17 +37,16 @@ public class Day210108_01Operatoren {
 		System.out.println("Aufgabe 2 - Die Kisten füllen:");
 		anzahlFlaschen = 13; //Zurücksetzen
 		int anzahlKisten = 2;
-		int gefuellteKisten;
+		int gefuellteKisten = anzahlFlaschen / anzahlFlaschenProKiste;
 		
-		//Zuerst brauche ich einen Wert, mit dem ich die Anzahl für das Durchlaufen der Schleife bestimme:
-		gefuellteKisten = anzahlFlaschen / anzahlFlaschenProKiste;
+		if (gefuellteKisten <= anzahlKisten) {
 		
-		for (int i=1; i<=gefuellteKisten ; i++) {
-			System.out.println( i + ". Kiste füllen" );
+			for (int i=1; i<=gefuellteKisten ; i++) {
+				System.out.println( i + ". Kiste füllen" );
+			}
 		}
-		
 
 		
-	}
+	} // Ende Main Methode
 
 }
