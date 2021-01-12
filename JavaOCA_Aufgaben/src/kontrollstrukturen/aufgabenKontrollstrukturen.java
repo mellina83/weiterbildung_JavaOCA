@@ -92,7 +92,20 @@ public class aufgabenKontrollstrukturen {
 		//        *   *
 		//        *****
 		
+		zeilen = 4;
+		spalten = 5;
 		
+		for(int z = 0; z < zeilen; z++) {
+			for (int s = 0; s < spalten; s++) {
+				
+				if(z==0 || z==zeilen-1 || s==0 || s==spalten-1) {
+					System.out.print('*');
+				} else {
+					System.out.print(' ');
+				}
+			}
+			System.out.println();
+		}
 		
 		
 		//A7. Zeichnen Sie folgendes Spielfeld auf der Konsole:
@@ -105,9 +118,22 @@ public class aufgabenKontrollstrukturen {
 		//        D.....
 		//        E.....
 		
-		System.out.print(" ");
-		for (int m = 1; m<=5; m++) {
-			System.out.print(m);
+		zeilen = 5;
+		spalten = 5;
+		
+		System.out.print(' ');
+		for (int s = 0; s < spalten; s++) {
+			System.out.print(s+1);
+		}
+		System.out.println();
+		
+		for (char z = 'A'; z < 'A' + zeilen; z++) {
+			System.out.print(z);
+			
+			for (int s = 0; s < spalten; s++) {
+				System.out.print('.');
+			}
+			System.out.println();
 		}
 		
 		
@@ -126,6 +152,28 @@ public class aufgabenKontrollstrukturen {
 		//	    Monat 5: 1 2 3 ... 30 31
 		//	    ...
 		//	    Monat 12: 1 2 3 ... 30 31
+		System.out.println("\n\nAufgabe 8:");	
+		for(int monat = 1; monat<=12; monat++) {
+		    System.out.print("Monat " + monat + ": ");
+			
+		    int tageImMonat = 31;
+		    
+		    if(monat==2) {
+		    	tageImMonat = 28;
+		    } else if(monat==4 || monat==6 || monat==9 || monat==11) {
+		    	tageImMonat = 30;
+		    } 
+		    
+		    for (int tag = 1; tag <= tageImMonat; tag++) {
+				System.out.print(tag + " ");
+			}
+		    
+		    if(monat==2) {
+		    	System.out.print("(29)");
+		    }
+		    
+		    System.out.println();
+		}
 		
 	
 		
