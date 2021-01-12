@@ -20,19 +20,35 @@ public class aufgabenKontrollstrukturenWhileUndDoWhile {
 		//Aufgabe 1: Folgende Zahlenreihe mit der while und do while -Schleife in einer Zeile ausgeben: 0 1 2 3 4 5 6 7 8 9
 		System.out.println("\n\nAufgabe 1:");	
 		
-		int k = 0;
-		while (k<=8) {
+		int k = -1;
+		while (k<9) {
 			k++;
 			System.out.print(k + " ");
 		}
 		System.out.println();
 		
+		//Alternative: Inkrement in der Printausgabe
 		k = 0;
+		while(k <10) {
+			System.out.print(k++ + " ");
+		}
+		System.out.println();
+		
+		k = -1;
 		do {
 			k++;
 			System.out.print(k + " ");
 		} while (k<9);
+		System.out.println();
 			
+		//Alternative mit Inkrement in while-Bedingung
+		k=0;
+		do {
+			System.out.print(k + " ");
+		} while (++k < 10);
+		
+		
+		
 		//Aufgabe 2: Folgende Zahlenreihe mit der while und do while -Schleife in einer Zeile ausgeben: 0 2 3 4 5 6 7 8 9
 		System.out.println("\n\nAufgabe 2:");
 		
@@ -59,7 +75,7 @@ public class aufgabenKontrollstrukturenWhileUndDoWhile {
 		System.out.println("\n\nAufgabe 3:");		
 
 		k = -6;
-		while (k <50 && k%2==0) {
+		while (k <50) {
 			k+=2;
 			System.out.print(k + " ");
 		}
@@ -69,7 +85,7 @@ public class aufgabenKontrollstrukturenWhileUndDoWhile {
 		do {
 			k+=2;
 			System.out.print(k + " ");
-		} while (k<50 && k%2==0);
+		} while (k<50);
 		
 		
 		
@@ -81,10 +97,9 @@ public class aufgabenKontrollstrukturenWhileUndDoWhile {
 			++buch;
 			System.out.print(buch + " ");
 			}
-		
 		System.out.println();
-		buch = 'a'-1;
 		
+		buch = 'a'-1;
 		do {
 			++buch;
 			System.out.print(buch + " ");
@@ -121,26 +136,32 @@ public class aufgabenKontrollstrukturenWhileUndDoWhile {
 			}
 
 		}
-		
 		System.out.println();
-		k = 0;
+		
+		k = 1;
 		do {
-			k++;
 			if (k%5==0) {
 				System.out.print(k + " ");
 			}
+			k++;
+		} while (k<=100);
+		System.out.println();
+		System.out.println();
 			
-		} while (k<100);
 			
-			
-		//Optional: Folgende Zahlenreihe bitte in einer Zeile ausgeben: 3 1 2 3 2 1 2 1 1
-		System.out.println("\n\nZusatzaufgabe:");
-
+		// Zusatzaufgabe spontan vom 12.01.2021: Verschachteln
 		
-		//
-		//
+		//Ausgabe: a 123 b 123 c 123
 		
-
+		buch = 'a';
+		while (buch <= 'c') {
+			System.out.print(buch++ + " ");
+			
+			int zahl = 1;
+			do {
+				System.out.print(zahl + " ");
+			} while (++zahl <=3);
+		}
 	}
 
 }

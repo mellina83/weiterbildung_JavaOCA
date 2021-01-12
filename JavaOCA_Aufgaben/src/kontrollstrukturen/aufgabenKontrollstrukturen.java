@@ -6,40 +6,57 @@ public class aufgabenKontrollstrukturen {
 
 		//A1. Berechnen Sie die Summe aller folgenden Werte: 1, 2, 3 ... 10. Geben Sie die Summe aus.
 		System.out.println("Aufgabe1:");
-		int i = 0;
-		int summe = 0;
+		int i = 0, summe = 0;
 		while (i < 10) {
 			i++;
 			summe = summe + i;
 		}
 		System.out.println("Summe: " + summe);
+		
+		//Vom Dozenten mit FOR Schleife
+		int summezahl = 0;
+		for (int zahl = 1; zahl <=10;zahl++) {
+			summezahl+= zahl;
+		}
+		System.out.println("Summe: " + summezahl);
 
 
 		//A2. Gegeben ist: x = 3, y = 4. Berechnen Sie bitte x hoch y und geben Sie das Ergebnis aus.
   		// Benutzen Sie für die Lösung die for-Schleife.
 		System.out.println("\n\nAufgabe2:");	
 		
-		for (int x = 3, y = 0; y<3; x = x * x ) {
-			++y;
-			System.out.println("3 hoch 4 ist: " + x);
+		final int xpo = 3;
+		final int ypo = 4;
+		int result = 1;
+		for (int ipo = 0; ipo < ypo; ipo++ ) {
+			result *= xpo;
 		}
-
+		System.out.println("3 hoch 4 ist: " + result);
 
 		//A3. Gegeben ist: x = 3, y = 4. Berechnen Sie bitte x hoch y und geben Sie das Ergebnis aus.
 		// Benutzen Sie für die Lösung die while-Schleife.
-		System.out.println("\n\nAufgabe3:");			
+		System.out.println("\n\nAufgabe3:");
+		
+		int ipo = 1;
+		result = xpo;
+		while (ipo < ypo) {
+			result *= xpo;
+			ipo++;
+		}
+		System.out.println(xpo + " hoch " + ypo + " ist gleich " + result);
+		
 		
 		
 		//A4. Gegeben ist: x = 3, y = 4. Berechnen Sie bitte x hoch y und geben Sie das Ergebnis aus.
 		// Benutzen Sie für die Lösung die Methode ``java.lang.Math.pow``.
-		System.out.println("\n\nAufgabe4:");	
 		
-		int x = 3;
-		int y = 4;
-		int ergebnis = (int) Math.pow(x, y);
+		System.out.println("\n\nAufgabe4");	
+		
+		int x = 3, y = 4;
+		double ergebnis = Math.pow(x, y);
 		System.out.println("3 hoch 4 ist: " + ergebnis);
 		
-		
+
 		
 		//A5. Zeichnen Sie ein gefülltes Rechteck auf der Konsole:
 		System.out.println("\n\nAufgabe5:");	
@@ -49,10 +66,23 @@ public class aufgabenKontrollstrukturen {
 		//      *****
 		//      *****
 		
+		int zeilen = 4;
+		int spalten = 5;
+		char buch = '*';
+		
+		for (int zlokal=0; zlokal < zeilen; zlokal++) {
+			for (int s = 0; s<spalten; s++) {
+				System.out.print(buch);
+				
+			}
+			System.out.println();
+		}
+		
+		/* Meine Lösung geht auch
 		for (int m = 0; m<4; m++) {
 			System.out.println("****");
 		}
-		
+		*/
 		
 		//A6. Zeichnen Sie ein leeres Rechteck auf der Konsole:
 		System.out.println("\n\nAufgabe6:");	
@@ -61,6 +91,9 @@ public class aufgabenKontrollstrukturen {
 		//        *   *
 		//        *   *
 		//        *****
+		
+		
+		
 		
 		//A7. Zeichnen Sie folgendes Spielfeld auf der Konsole:
 		System.out.println("\n\nAufgabe7:");	
