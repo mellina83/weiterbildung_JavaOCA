@@ -76,7 +76,7 @@ public class aufgabenKontrollstrukturen {
 		for (int m = 1; m<=5; m++) {
 			System.out.print(m);
 		}
-		while
+		
 		
 		//A8. Als Grundlage ist folgende Schleife zu nehmen:
 		
