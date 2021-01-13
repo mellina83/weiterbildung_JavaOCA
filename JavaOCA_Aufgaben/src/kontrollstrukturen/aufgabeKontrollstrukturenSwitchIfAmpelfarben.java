@@ -21,6 +21,7 @@ public class aufgabeKontrollstrukturenSwitchIfAmpelfarben {
 		//Lösung mit Switch:
 		System.out.println("Lösung mit Switch:");
 		
+		
 		String farbe = "Grün";
 		switch (farbe) {
 		case "Rot":
@@ -36,9 +37,15 @@ public class aufgabeKontrollstrukturenSwitchIfAmpelfarben {
 			System.out.println("Fehler! Diese Farbe gibt es nicht.");
 			break;
 		}
+		//Case-sensitiv! Ich gehe hier davon aus, dass die User richtig tippen. Mit unseren momentanen Code-Möglichkeiten kann man alle Möglichkeiten abdecken. Aber es gibt Methode, um Buchstaben kleiner zu machen.
 	
 		//Lösung mit if:
 		System.out.println("\n\nLösung mit if");
+		
+		/*
+		 * Achtung! Der Vergleichsoperator ist beim Vergleich der Referenzen falsch.
+		 * Besser wäre die equals-Methode. Wird in weiteren Beispielen erklärt.
+		 */
 		
 		if (farbe == "Rot") {
 				System.out.println("Rot. Bitte warten!");

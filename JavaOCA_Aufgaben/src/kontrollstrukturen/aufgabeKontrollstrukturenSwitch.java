@@ -50,6 +50,12 @@ public class aufgabeKontrollstrukturenSwitch {
 			System.out.println(ch + " ist eine ungültige Eingabe");
 		}
 		
+		//for (char ch = 'A'; ch <='z'; ch++) voranschalten, um für alle Buchstaben die Beschreibung anzeigen zu lassen
+		//aber: schlecht lesbar.
+		//Besser mit Methode:
+		//for (char ch = 'A'; ch <='z'; ch++) {
+		//	checkIsCharVokalOrKonsonantAndPrintResult(ch);
+		
 		//Aufgabe 3
 		System.out.println("\n\nAufgabe 3");
 		
