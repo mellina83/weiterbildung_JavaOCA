@@ -13,10 +13,10 @@ public class AufgabeMethodenA04 {
         *****
 	 */
 
-	static void zeichneRechteck(int zeilen, int spalten) {
+	static void zeichneRechteck(int hoehe, int breite) {
 		char ch = '*';
-		for (int i = 0; i < zeilen; i++) {
-			for (int j = 0; j < spalten; j++) {
+		for (int i = 0; i < hoehe; i++) {
+			for (int j = 0; j < breite; j++) {
 				System.out.print(ch);
 			}
 			System.out.println();

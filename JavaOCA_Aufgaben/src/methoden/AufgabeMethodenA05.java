@@ -21,6 +21,7 @@ package methoden;
 
 public class AufgabeMethodenA05 {
 	
+	//Meine Methode definieren:
 	static void zeichneRechteck (int zeilen, int spalten, boolean fuellen) {
 		char ch ='*';
 		if (fuellen == true) {
@@ -46,8 +47,16 @@ public class AufgabeMethodenA05 {
 		}	
 	}
 	
-
+	//Methode von Dozent (Idee v. Arno) kompakter definiert:
+	
+	static void zeichneRechteck2 (int zeilen, int spalten, boolean fuellen) {
+		
+	}
+	
+	//Aufruf von meiner Methode
 	public static void main(String[] args) {
-		zeichneRechteck(5, 6, false);
+		zeichneRechteck(5, 6, true);
+		System.out.println();
+		zeichneRechteck(6, 7, false);
 	}
 }

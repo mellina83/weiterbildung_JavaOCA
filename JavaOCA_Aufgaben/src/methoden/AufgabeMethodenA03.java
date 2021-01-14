@@ -8,10 +8,10 @@ package methoden;
 
 public class AufgabeMethodenA03 {
 	
-	static int sumFromTo(int a, int b) {
+	static int sumFromTo(int from, int to) {
 		int summe = 0;
-		for (int i = a; i <= b; i++) {
-			summe = summe + i;
+		for (int i = from; i <= to; i++) {
+			summe += i;
 		}
 		return summe;
 	}
@@ -19,7 +19,7 @@ public class AufgabeMethodenA03 {
 	
 	public static void main(String[] args) {
 		
-		int summe = sumFromTo(2, 6);
-		System.out.print(summe + " ");
+		int sum = sumFromTo(2, 6);
+		System.out.print(sum + " ");
 	}
 }

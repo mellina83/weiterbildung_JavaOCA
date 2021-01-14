@@ -10,15 +10,26 @@ package methoden;
  */
 
 public class AufgabeMethodenA06 {
-	
+
+	// Meine Methode:
 	static void printRandom(int anzahl, int untergrenze, int obergrenze) {
 		java.util.Random randomGenerator = new java.util.Random();
 		for (int i = 0; i < anzahl; i++) {
-			int y = randomGenerator.nextInt(obergrenze-1);
+			int y = randomGenerator.nextInt(obergrenze - 1);
 			y = y + untergrenze;
 			System.out.print(y + " ");
 		}
 	}
+	
+	/*
+	static void printRandom(int anzahl, int untergrenze, int obergrenze) {
+		Random random = new Random();
+		
+		for (int i = 0; i < anzahl; i++) {
+			int zahl = random.nextInt()
+		}
+	}
+	*/
 	
 	public static void main(String[] args) {
 		printRandom(5, 2, 9);

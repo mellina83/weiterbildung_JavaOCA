@@ -8,16 +8,20 @@ package methoden;
 
 public class AufgabeMethodenA02 {
 	
-	static int sum(int a, int b) {
-		int summe = a + b;
-		return summe ;
+	static long sum(int a, int b) {
+		return (long) a + b; // *
+		
+		//* ich hatte:
+		//int summe = a + b;
+		//return summe;
+
 	}
 	
 	public static void main(String[] args) {
 		
-		int summe = sum(4, 7);
+		long summe = sum(4, 7);
 		System.out.println(summe);
-		summe = sum(5, 20);
+		summe = sum(5, 22);
 		System.out.println(summe);
 		
 		
