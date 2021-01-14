@@ -14,15 +14,12 @@ public class AufgabeMethodenA03 {
 			summe = summe + i;
 		}
 		return summe;
-		
 	}
 	
-
+	
 	public static void main(String[] args) {
 		
 		int summe = sumFromTo(2, 6);
 		System.out.print(summe + " ");
-
 	}
-
 }

@@ -26,5 +26,5 @@ public class AufgabeMethodenA04 {
 	public static void main(String[] args) {
 		zeichneRechteck(4, 5);
 
-	}
+	} // Ende Main
 }

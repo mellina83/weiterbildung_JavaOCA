@@ -11,13 +11,8 @@ public class AufgabeMethodenA02 {
 	static int sum(int a, int b) {
 		int summe = a + b;
 		return summe ;
-		
 	}
 	
-	
-	
-	
-
 	public static void main(String[] args) {
 		
 		int summe = sum(4, 7);
@@ -27,9 +22,6 @@ public class AufgabeMethodenA02 {
 		
 		
 		
-		
-		
-
 	} // Ende Main Methode
 
 }
