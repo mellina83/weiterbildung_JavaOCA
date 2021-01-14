@@ -24,6 +24,10 @@ public class AufgabeMethodenA02 {
 		summe = sum(5, 22);
 		System.out.println(summe);
 		
+		// Mit Max Value von Integer
+		summe = sum(1, Integer.MAX_VALUE);
+		System.out.println("1 + " + Integer.MAX_VALUE + " = " + summe);
+		
 		
 		
 	} // Ende Main Methode

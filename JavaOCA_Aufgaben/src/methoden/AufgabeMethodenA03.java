@@ -20,6 +20,11 @@ public class AufgabeMethodenA03 {
 	public static void main(String[] args) {
 		
 		int sum = sumFromTo(2, 6);
-		System.out.print(sum + " ");
+		System.out.println(sum + " ");
+		sum = sumFromTo(1, 5);
+		System.out.println("1 + 2 + ... + 5 = " + sum); // Sollwert: 15
+		sum = sumFromTo(2, 4);
+		System.out.println("2 + 3 + 4 = " + sum); // Sollwert: 9
+		
 	}
 }

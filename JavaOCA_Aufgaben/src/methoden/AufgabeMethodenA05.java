@@ -23,35 +23,20 @@ public class AufgabeMethodenA05 {
 	
 	//Meine Methode definieren:
 	static void zeichneRechteck (int zeilen, int spalten, boolean fuellen) {
-		char ch ='*';
-		if (fuellen == true) {
+		char fillChar = fuellen ? '*' : ' ';
+
 			for (int i = 0; i < zeilen; i++) {
 				for (int j = 0; j < spalten; j++) {
-					System.out.print(ch);
+					if(i==0 || i==zeilen-1 || j==0 || j==spalten-1) {
+						System.out.print("*");
+				} else {
+					System.out.print(fillChar);
 				}
-				System.out.println();
 			}
-			
-		} else {
-			for(int z = 0; z < zeilen; z++) {
-				for (int s = 0; s < spalten; s++) {
-					
-					if(z==0 || z==zeilen-1 || s==0 || s==spalten-1) {
-						System.out.print('*');
-					} else {
-						System.out.print(' ');
-					}
-				}
-				System.out.println();
-			}
-		}	
+			System.out.println();
+		} 
 	}
-	
-	//Methode von Dozent (Idee v. Arno) kompakter definiert:
-	
-	static void zeichneRechteck2 (int zeilen, int spalten, boolean fuellen) {
-		
-	}
+
 	
 	//Aufruf von meiner Methode
 	public static void main(String[] args) {

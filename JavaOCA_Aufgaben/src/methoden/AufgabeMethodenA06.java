@@ -1,5 +1,7 @@
 package methoden;
 
+import java.util.Random;
+
 /* A6
  * Definieren Sie eine statische Methode "printRandom", die die N int-Zufallszahlen aus einem Zahlenbereich [VON...BIS] generiert und auf der Konsole ausgibt.
  * Die Anzahl der Zahlen und die Unter- und Obergrenze des Zahlenbereiches sollen beim Aufruf der Methode als Argumente übergeben werden.
@@ -10,29 +12,30 @@ package methoden;
  */
 
 public class AufgabeMethodenA06 {
-
-	// Meine Methode:
-	static void printRandom(int anzahl, int untergrenze, int obergrenze) {
-		java.util.Random randomGenerator = new java.util.Random();
-		for (int i = 0; i < anzahl; i++) {
-			int y = randomGenerator.nextInt(obergrenze - 1);
-			y = y + untergrenze;
-			System.out.print(y + " ");
-		}
-	}
 	
-	/*
+	/**
+	 * Generiert und gibt Zufallswerte aus
+	 * 
+	 * @param anzahl Anzahl der Zufallswerte
+	 * @param untergrenze kleinstmöglicher Wert
+	 * @param obergrenze anders als üblich wird die Obergrenze inklusive betrachtet
+	 */
+	
 	static void printRandom(int anzahl, int untergrenze, int obergrenze) {
 		Random random = new Random();
 		
 		for (int i = 0; i < anzahl; i++) {
-			int zahl = random.nextInt()
+			int anzahlWerte = obergrenze - untergrenze + 1;
+			int zufallszahl = random.nextInt(anzahlWerte) + untergrenze;
+			System.out.print(zufallszahl + " ");
 		}
+		System.out.println();
 	}
-	*/
+	
 	
 	public static void main(String[] args) {
 		printRandom(5, 2, 9);
+		printRandom(7, -4, 9);
 
 	} // End Main
 

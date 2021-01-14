@@ -13,9 +13,14 @@ package methoden;
  */
 
 public class AufgabeMethodenZeitspanne {
+	
+	static void getZeitspanneInGanzenTagen(int tag1, int tag2) {
+		
+	}
+	
 
 	public static void main(String[] args) {
 
-	}
+	} // Ende Main
 
 }
