@@ -14,12 +14,39 @@ package methoden;
 
 public class AufgabeMethodenZeitspanne {
 	
-	static void getZeitspanneInGanzenTagen(int tag1, int tag2) {
+	//static void getZeitspanneInGanzenTagen(int tag1, int tag2) {
+	
+	static void getZeitspanneInGanzenTagen(int tag1, int monat1, int jahr1, int tag2, int monat2, int jahr2) {
+		
+		for(int monat = 1; monat<=12; monat++) {
+		    int tageImMonat = 31;
+		    
+		    if(monat==2) {
+		    	tageImMonat = 28;
+		    } else if(monat==4 || monat==6 || monat==9 || monat==11) {
+		    	tageImMonat = 30;
+		    } 
+		    
+		    for (int tag = 1; tag <= tageImMonat; tag++) {
+				System.out.print(tag + " ");
+			}
+		    
+		    if(monat==2) {
+		    	System.out.print("(29)");
+		    }
+		    
+		    System.out.println();
+		}
+		
+		
+		
 		
 	}
 	
 
 	public static void main(String[] args) {
+		
+		getZeitspanneInGanzenTagen(01022021, 05022021);
 
 	} // Ende Main
 
