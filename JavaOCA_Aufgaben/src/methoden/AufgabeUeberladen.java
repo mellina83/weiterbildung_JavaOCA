@@ -31,7 +31,6 @@ public class AufgabeUeberladen {
 		} else {
 			return x1;
 		}
-		
 	}
 	
 
