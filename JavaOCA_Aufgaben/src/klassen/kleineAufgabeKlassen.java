@@ -31,6 +31,7 @@ public class kleineAufgabeKlassen {
 		
 		printTier(papagei);
 		printTier(hund);
+		printTier(papagei.name, papagei.alter);
 		
 
 	} // Ende Main
@@ -38,7 +39,11 @@ public class kleineAufgabeKlassen {
 	static void printTier(Tier x) {
 		System.out.println("Name: " + x.name + ", Alter: " + x.alter);
 		
-	}
+	} // Ende printTier (1 Parameter)
+	
+	static void printTier(String tierName, int alter) {
+		System.out.println("Name: " + tierName + ". Alter: " + alter);
+	} // Ende printTier (2 Parameter)
 	
 	
 }
