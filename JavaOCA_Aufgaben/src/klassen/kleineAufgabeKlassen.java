@@ -32,8 +32,6 @@ public class kleineAufgabeKlassen {
 		printTier(papagei);
 		printTier(hund);
 		
-		
-		
 
 	} // Ende Main
 	
@@ -43,6 +41,4 @@ public class kleineAufgabeKlassen {
 	}
 	
 	
-	
-
 }
