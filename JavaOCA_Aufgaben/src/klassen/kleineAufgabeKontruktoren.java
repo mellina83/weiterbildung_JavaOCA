@@ -28,7 +28,6 @@ class NamePrinter {
 	int wiederholung;
 	
 	//Konstruktor
-	
 	NamePrinter(String name, int wiederholung) {
 		this.name = name;
 		this.wiederholung = wiederholung;
