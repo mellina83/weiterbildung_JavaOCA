@@ -37,10 +37,11 @@ public class AufgabeKlassenEinfach {
 		//Main A1:
 		System.out.println("Aufgabe1:");
 		
-		// Erzeugung Länder
+		// Erzeugung Länder (Dozent hat als Referenzen brasilien und deutschland verwendet)
 		Land land1 = new Land();
 		land1.name = "Brasilien";
 		land1.einwohnerzahl = 211_000_000;
+
 		
 		Land land2 = new Land();
 		land2.name = "Deutschland";
