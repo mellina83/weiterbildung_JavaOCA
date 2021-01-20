@@ -27,6 +27,10 @@ class NamePrinter {
 	String name;
 	int wiederholung;
 	
+	//Wenn man die Attribute geheim halten möchte, nur für sich sichtbar machen möchte. Ich verbiete hier, damit weiterzuprogrammieren.
+	// private String name;
+	// private int wiederholung;
+	
 	//Konstruktor
 	NamePrinter(String name, int wiederholung) {
 		this.name = name;
@@ -47,6 +51,9 @@ public class kleineAufgabeKontruktoren {
 
 	public static void main(String[] args) {
 		NamePrinter nameprinter1 = new NamePrinter("Tom", 10);
+		// nameprinter1.name = "Tom"; -> gespart durch Konstruktor
+		// nameprinter1.wiederholung = 10; -> gespart durch Konstruktor
+		
 		NamePrinter nameprinter2 = new NamePrinter("Jerry", 3);
 				
 		nameprinter1.nameWiederholen();
