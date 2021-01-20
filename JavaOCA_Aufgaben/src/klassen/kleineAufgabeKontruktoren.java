@@ -35,7 +35,7 @@ class NamePrinter {
 	
 	//Instanzmethode:
 	void nameWiederholen() {
-		for (int i = 0; i <= wiederholung; i++) {
+		for (int i = 0; i < wiederholung; i++) {
 			System.out.println(name);
 		}
 		System.out.println();
