@@ -1,26 +1,29 @@
 package klassen;
 
+import java.util.Random;
+
 class Rechteck {
-	int breite;
-	int hoehe;
-	int nummer;
+	int breite; // Wenn ich auf private setze, gehen nicht: Manueller Ausdruck ab Z79
+	int hoehe; // und statische Methode ab Z108 (Compilerfehler)
 	
 	//Konstruktor (Methode)
 	Rechteck(int breite, int hoehe) {
 		this.breite = breite;
 		this.hoehe = hoehe;
 	}
-	//Methode: Ausgabe Maße Rechteck
-	void printRechteck() {
-	System.out.println("Rechteck: ( " + breite + " x " + hoehe + " )");
+	
+	@Override //(Annotationen werden später besprochen)
+	public String toString() {
+		return "Rechteck: " + breite + " x " + hoehe;
 	}
+	
 	//Methode: Setzen neuer Werte
 	void setBreiteHoehe(int neueBreite, int neueHoehe) {
 		this.breite = neueBreite;
 		this.hoehe = neueHoehe;
 	}
-	
 } //Ende class Rechteck
+
 
 class Kreis {
 	int radius;
@@ -29,12 +32,13 @@ class Kreis {
 	Kreis(int radius) {
 		this.radius = radius;
 	}
-	//Methode: Ausgabe Maße Kreis
-	void printKreis() {
-		System.out.println("R = " + this.radius);
-	}
 	
+	@Override //(Annotationen werden später besprochen)
+	public String toString() {
+		return "Kreis R(" + radius + ")";
+	}
 } //Ende class Kreis
+
 
 /*
  * # Aufgabe 'Klassen - Geometrie'
@@ -66,40 +70,36 @@ public class AufgabeKlassenGeometrie {
 
 	public static void main(String[] args) {
 		
-		//Erzeugen von 100 Rechtecken mit Konstruktor:
-		Rechteck r1 = new Rechteck(1,2);
-		Rechteck r2 = new Rechteck(2,8);
-		Rechteck r3 = new Rechteck(7,18);
+		int anzahlRechtecke = 25;
+		System.out.println("*** " + anzahlRechtecke + "Rechtecke: ");
 		
-		//???? Eher gewünscht: 100 Rechtecke, zufällige Werte
-		//100 Rechtecke generieren: Mit for? oder gar mit rekursiv? Mein Problem: Den Referenznamen generieren (Ich dachte, man hat keinen Zugriff drauf)
-		//Zufällige Werte: Mit Zufallsmethoden
+		Random random = new Random();
 		
-		//Ausdruck manuell ohne explizite Methoden:
-		System.out.println("Ausdruck Manuell (Zur Überprüfung): Rechteck");
-		System.out.println("Rechteck: " + r1.breite + " x " + r1.hoehe);
-		System.out.println("Rechteck: " + r2.breite + " x " + r2.hoehe);
-		System.out.println("Rechteck: " + r3.breite + " x " + r3.hoehe);
+		int randomBound = 20;
+		
+		for (int i=1; i<=anzahlRechtecke;i++) {
+			int breite = random.nextInt(randomBound) + 1;
+			int hoehe = random.nextInt(randomBound) + 1;
+			
+			Rechteck r = new Rechteck(breite,hoehe);
+			System.out.println(i + ". " + r);
+		}
 		
 		//Masse von Rechtecken ändern, einmal mit Objektmethode, einmal mit statischer Methode:
-		r1.setBreiteHoehe(5, 9);
-		setNeueBreiteNeueHoehe(r2, 1, 20);
+		//r1.setBreiteHoehe(5, 9);
+		//setNeueBreiteNeueHoehe(r2, 1, 20);
 		
-		//Ausdruck über Objektmethode:
-		System.out.println("\nAusdruck über Objektmethode: Rechteck (nach Ändern von Werten für r1 und r2)");
-		r1.printRechteck();
-		r2.printRechteck();
-		r3.printRechteck();
-		
+		//Ausdruck über toString
+		System.out.println("\nAusdruck über toString-Methode: Rechteck (nach Ändern von Werten für r1 und r2)");
+	
 		//Ausdruck über statische Methode:
 		System.out.println("\nAusdruck über statische Methode: Kreis");
-		
 		
 		//Erzeugen eines Kreises mit Konstruktor:
 		Kreis k1 = new Kreis(5);
 		
-		//Ausdruck Radius über Instanzmethode
-		k1.printKreis();
+		//Ausdruck Kreis mit toString/println:
+		System.out.println(k1);
 		
 
 	} // Ende Main
