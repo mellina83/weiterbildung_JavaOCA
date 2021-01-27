@@ -3,10 +3,9 @@ package klassen.person;
 public class Person {
 	
 	//A1: Erstellen neue Klasse `Person`
-	String vorname;
-	String nachname;
-	int geburtsjahr;
-	String plz;
+	private String vorname, nachname;
+	private int geburtsjahr;
+	private String plz;
 	
 	//A2: Mindestens zwei Konstruktoren
 	Person(String vorname, String nachname, int geburtsjahr, String plz) {
@@ -14,7 +13,7 @@ public class Person {
 		this.nachname = nachname;
 		this.geburtsjahr = geburtsjahr;
 		this.plz = plz;
-		System.out.println("Der Datensatz zu " + vorname + " " + nachname + " ist vollständig.");
+		System.out.println("Der Datensatz zu " + vorname + " " + nachname + " ist vollständig erstellt.");
 	}
 	
 	Person(String vorname, String nachname) {
@@ -28,9 +27,9 @@ public class Person {
 		return vorname + " " + nachname;
 	}
 	// Für einen Komplettausdruck:
-	public void printPerson(Person person) {
-		System.out.println(person.vorname + " " + person.nachname + ", geboren " + person.geburtsjahr + " und wohnhaft in PLZ " + person.plz + " .");
-	}
+		public void printPerson() {
+			System.out.println(this.vorname + " " + this.nachname + ", geboren " + this.geburtsjahr + " und wohnhaft in PLZ " + this.plz + " .");
+		}
 	
 	
 	//A4 Opt: getter- und setter-Methoden nach JavaBeans:
@@ -67,11 +66,18 @@ public class Person {
 	//A7.1: equals-Methode überschreiben
 	public boolean equals(Object obj) {
 		Person person1 = this;
-		Person person2 = (Person)obj;
+		Person person2 = (Person)obj; // Casten zu Person
 		
-		return person1.geburtsjahr == person2.geburtsjahr && person1.plz == person2.plz;
+		
+		//return person1.geburtsjahr == person2.geburtsjahr && person1.plz == person2.plz;
+		return person1 == person2;
 	}
 	
+	
+	//a8: Factoring Method - Design Pattern
+	public static Person getMustermann() {
+		return new Person("Max", "Mustermann", 1745, "45678");
+	}
 	
 	public static void main(String[] args) {
 
