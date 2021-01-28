@@ -2,13 +2,20 @@ package arrays.hafen;
 
 public class Hafen {
 	
+	//Max_Schiffe mit 100 Stücken definiert
 	final private static int Max_Schiffe = 100;
 	
-	//Platz für maximal 100 Schiffe
+	//Platz als Array definiert
 	private final Schiff[] schiffe = new Schiff[Max_Schiffe];
 	
-	//
-	public void addSchiff(Schiff s) {
+	//Klassenmethode: Schiffe in Hafen einfahren
+	/**
+	 * Ein Schiff ankern lassen (im Hafen speichern)
+	 * 
+	 * @param s
+	 * @return true wenn hinzugefügt, false, wenn es kein Platz gibt
+	 */
+	public boolean addSchiff(Schiff s) {
 		//Damit die Exception in Main nicht erscheint, boolean etc s Lösung von Dozent
 		
 		//1. freie Stelle im Array finden
@@ -20,11 +27,17 @@ public class Hafen {
 			}
 		}
 
-		//2. Dort die Schiffreferenz kopieren
+		if(index==-1) {
+			return false;
+		}
+		
+		// 2. Dort die Schiff-Referenz kopieren
 		schiffe[index] = s;
 		
+		return true;
 	}
 	
+	//Methode für Anzahl Schiffe im Hafen (Array wird erstellt)
 	public Schiff[] getSchiffeImHafen() {
 		int anzahlSchiffe = getAnzahlSchiffe();
 		

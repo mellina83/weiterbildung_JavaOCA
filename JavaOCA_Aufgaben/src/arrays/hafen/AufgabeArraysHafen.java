@@ -16,9 +16,10 @@ public class AufgabeArraysHafen {
 		
 		//Objekte aus Klasse Schiffe erstellen und Referenzen werden in Array schiffe kopiert
 		for (int i = 0; i < 12 ;i++) {
-			
-			Schiff s = new Schiff();
-			h1.addSchiff(s); 
+			Schiff s = new Schiff("S" + i);
+			if (!h1.addSchiff(s)) {
+				System.out.println("Hafen ist voll. Kein weiteres Schiff konnte ankern");
+			}
 
 		}
 		

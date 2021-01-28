@@ -1,6 +1,6 @@
-package arrays;
+  package arrays;
 
-public class Arrays2D {
+public class AufgabeArrays2D {
 	
 	
 
@@ -15,7 +15,7 @@ public class Arrays2D {
 	
 		//A3 Auf der Stelle (1,1) den Wert 5 speichern und erneut auf dem Bildschirm ausgeben (Index 0 und 0?)
 		System.out.println("\nAufgabe 3:");
-		arr[0][0] = 5;
+		arr[1][1] = 5;
 		printArray(arr);
 		
 		//A4 Alle Positionen in dem Array mit dem Wert 2 belegen. Dazu verschachtelte for-Schleifen nutzen
@@ -42,20 +42,22 @@ public class Arrays2D {
 	public static int[][] createArray(int x, int y) {
 		return new int[x][y]; //(new int, da ich das Array noch nicht erstellt hatte
 	}
+
 	
 	//A2 + A6 Methode printArray() erzeugen:
 	//Array soll an diese Methode übergeben werden
 	// Aussehen:
-	//00000 bzw mit Kommata zwischen den Zahlen
+	//00000 bzw mit Kommata zwischen den Zahlen, außer letzte Stellen
 	//00000
 	//00000
 	//00000
 	public static void printArray(int[][]array) {
 		for (int i = 0; i<array.length;i++) {
-			for (int j = 0; j<array[i].length;j++) {
+			for (int j = 0; j<array[i].length - 1;j++) { // Eine Zahl früher aufhören für Kommata an letzter Stelle
 				System.out.print(array[i][j] + ", ");
+				
 			}
-			System.out.println();
+			System.out.println(array[i][array[i].length-1]); // das letzte Element
 		}
 	}
 	//Optional für mich mit Subarray
