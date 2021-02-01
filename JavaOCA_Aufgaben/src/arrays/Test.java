@@ -1,50 +1,44 @@
 package arrays;
 
-class Kreis1 {
-	private int radius;
-	
-	//Konstruktor
-	public Kreis(int radius) {
-		this.radius = radius;
-	}
-	
-	@Override //(Annotationen werden später besprochen)
-	public String toString() {
-		return "Kreis R(" + radius + ")";
-	}
-} //Ende class Kreis
-
 
 public class Test {
 
 	public static void main(String[] args) {
 		
+		int[] zahlen = new int[7];
 		
-		int anzahlKreise = 100;
-		int randomMax = 10;
-		System.out.println("*** " + anzahlKreise + " Rechtecke: ");
+		zahlen = abgeben(1,4,7,12,25,37,39);
+		System.out.println(zahlen);
 		
-		Random random = new Random();
-		
-		String [] arrayKreise = new String[anzahlKreise];
-		
-		for (int i=1; i<anzahlKreise;i++) {
-			
-			new Kreis();
-			
-			
-			
-			int zufallszahl = random.nextInt(randomMax) + 1;
-			
-			arrayKreise [i] = new Kreis(zufallszahl[i]);
-			
-			
-			
-
+		for (int i = 0; i < zahlen.length; i++)  {
+			System.out.println(zahlen[i] + " ");
 		}
 		
 		
 
+		
+		
+
 	} // Ende von Main
+	
+	
+	public static int[] abgeben(int...values) {
+		int[] array = new int[7];
+		
+		for (int element : values) {
+			System.out.println(element);
+			for (int i = 0; i < array.length; ++i) {
+				array[i] = element;
+			}
+
+		}
+		return array;
+
+	}
+	
+	public static void printAbgeben() {
+		
+	}
+	
 
 }

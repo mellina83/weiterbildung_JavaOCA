@@ -6,7 +6,7 @@ public class AufgabeVarargs {
 		
 		/*
 		 * A1
-		 * Definieren Sie eine Methode `produkt`, die 'beliebig viele' übergebene int-Werteuntereinander multipliziert und das Ergebnis zurück liefert.
+		 * Definieren Sie eine Methode `produkt`, die 'beliebig viele' übergebene int-Werte untereinander multipliziert und das Ergebnis zurück liefert.
 		 * Sie dürfen das mögliche 'int overflow' bei dieser Aufgabe ignorieren.
 		 * Falls keine Argumente übergeben werden, soll die Methode 1 zurück liefern.
 		 */
@@ -84,6 +84,10 @@ public class AufgabeVarargs {
 		kette = kette + strings[letzterwert];
 
 		return kette;
+		
+		// result.substring(0,
+		//result.lastIndexOf(',');
+		
 	}
 
 
