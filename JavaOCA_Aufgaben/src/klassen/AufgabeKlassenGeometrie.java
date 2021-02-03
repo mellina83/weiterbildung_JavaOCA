@@ -106,7 +106,7 @@ public class AufgabeKlassenGeometrie {
 	
 	
 	//Statische Methode: Setzen neuer Werte
-	static void setNeueBreiteNeueHoehe(Rechteck rechteck, int neueBreite, int neueHoehe) {
+	static void setNeueBreiteNeueHoehe(Rechteck1 rechteck, int neueBreite, int neueHoehe) {
 		rechteck.breite = neueBreite;
 		rechteck.hoehe = neueHoehe;
 	}
