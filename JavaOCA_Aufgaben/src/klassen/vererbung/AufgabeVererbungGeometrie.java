@@ -1,4 +1,4 @@
-package klassen;
+package klassen.vererbung;
 
 //Optionale Aufgabe wurde mit Überschreiben der toString Methode und super.toString() gelöst
 
