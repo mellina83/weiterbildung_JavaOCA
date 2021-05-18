@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>9</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>243</x>
+      <y>387</y>
+      <w>360</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>ArrayUtils
+--
+_+ createUniqueRandomSortedArray(min:int, max:int, length:int) : int[]_</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>549</x>
+      <y>117</y>
+      <w>171</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=..</panel_attributes>
+    <additional_attributes>170.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>486</x>
+      <y>18</y>
+      <w>243</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>Beschreibt eine Ziehung
+- lässt sie durchführen
+- vergleicht Tipp mit gezogenen Zahlen
+- berechnet den Gewinn
+
+Evtl. zu viele Aufgaben für eine Klasse?</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>405</x>
+      <y>162</y>
+      <w>333</w>
+      <h>189</h>
+    </coordinates>
+    <panel_attributes>LottoSpiel
+--
+- zahlen : int[]
+- anzahlKugeln : int
+- anzahlKugelnGesamt : int
+--
++ LottoSpiel(anzahlKugeln: int, anzahlKugelnGesamt: int)
++ ziehen() : void
++ vergleichen(tipp : LottoTipp) : int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>342</x>
+      <y>171</y>
+      <w>81</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;70.0;30.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>18</x>
+      <y>162</y>
+      <w>333</w>
+      <h>189</h>
+    </coordinates>
+    <panel_attributes>LottoTipp
+--
+- anzahlKugeln: int
+- anzahlKugelnGesamt: int
+- zahlen: int[]
+--
++ LottoSpiel(anzahlKugeln: int, anzahlKugelnGesamt: int)
++ abgeben()
++ getZahlen() : int[]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>576</x>
+      <y>459</y>
+      <w>261</w>
+      <h>135</h>
+    </coordinates>
+    <panel_attributes>'vergleichen' berechnet auch den Gewinn:
+0 richtige: 0 Euro 
+	1 richtige: 1 Euro 
+	2 richtige: 10 Euro 
+	3 richtige: 100 Euro</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>594</x>
+      <y>261</y>
+      <w>81</w>
+      <h>216</h>
+    </coordinates>
+    <panel_attributes>lt=..</panel_attributes>
+    <additional_attributes>70.0;220.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>504</x>
+      <y>342</y>
+      <w>99</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;50.0;90.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>252</x>
+      <y>342</y>
+      <w>27</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>
