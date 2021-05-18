@@ -1,0 +1,18 @@
+Aufgabe zu Lösen:
+
+- Lotto-Spiel simulieren
+
+Was soll möglich sein:
+
+- Tipp abgeben (7 aus 49, 6 aus 36 ... oder x aus y)
+- Lotto-Ziehung durchführen
+- Vergleich von den getippten Zahlen mit den gezogenen, danach Gewinn berechnen
+
+Gewinn-Regeln:
+
+	0 richtige: 0 Euro 
+	1 richtige: 1 Euro 
+	2 richtige: 10 Euro 
+	3 richtige: 100 Euro
+	... 
+ 
