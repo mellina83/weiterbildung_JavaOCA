@@ -1,0 +1,43 @@
+package aufgaben;
+
+/**
+ * # Aufgabe 'Enums - Kaffeeautomat'
+ * 
+ * - Erstellen Sie eine Konsolenanwendung, die einen Kaffeeautomaten simuliert.
+ * Folgende Bedingungen müssen erfüllt werden:
+ * 
+ * 
+ * - Der Kaffeeautomat (KA) kann folgende Kaffeesorten verkaufen:
+ * 
+ * <code>
+ *  - KAFFEE (1 Euro)
+ *  - CAPPUCCINO (1,20 Euro)
+ *  - ESPRESSO (1,13 Euro).
+ * </code>
+ *
+ * Benutzen Sie Enums um diese Sorten zu definieren.
+ * 
+ * - Verwenden Sie die Klasse "java.util.Scanner" oder `java.io.Console`, um die
+ * Kommunikation zw. dem Benutzer und KA zu implementieren.
+ * 
+ * Folgende Schritte der Kommunikation sollen definiert werden:
+ * 
+ * - Preisliste wird auf dem Bildschirm angezeigt.
+ * 
+ * - Der Benutzer kann die gewünschte Sorte auswählen.
+ * 
+ * - Danach wird der Benutzer aufgefordert das Geld einzuwerfen.
+ * 
+ * Der Benutzer darf nur gültige Münzen einwerfen (1 Cent, 2 Cent … 2 Euro).
+ * Verwenden Sie Enums, um die Münzentypen zu definieren.
+ * 
+ * - Der Benutzer wirft das Geld ein bis die notwendige (oder größere) Summe
+ * eingesammelt wurde.
+ * 
+ * - Das Getränk wird ausgegeben.
+ * 
+ * - Das Rückgeld (falls nötig) wird in den gültigen Münzen ausgegeben.
+ */
+public class Aufgabe02Enum {
+
+}
